@@ -7,7 +7,7 @@ import (
 )
 
 type Parser interface {
-	ParseFile(name, content string) (map[string]*parse.Tree, err)
+	ParseFile(name, content string) (map[string]*parse.Tree, error)
 	RequiredHtmlFuncs() htmlTemplate.FuncMap
 	RequiredTextFuncs() textTemplate.FuncMap
 	ApplicableExtensions() []string
@@ -19,6 +19,16 @@ func RegisterParser(p Parser) {
 	for _, extension := range p.ApplicableExtensions() {
 		if _, found := registeredParsers[extension]; !found {
 			registeredParsers[extension] = p
+		}
+	}
+}
+
+func RegisterParsers(parsers ...Parser) {
+	for _, p := range parsers {
+		for _, extension := range p.ApplicableExtensions() {
+			if _, found := registeredParsers[extension]; !found {
+				registeredParsers[extension] = p
+			}
 		}
 	}
 }
