@@ -15,7 +15,9 @@ escaped form or a plain text form.
 Current Formats:
 * None
 
+Formats in Testing:
+* Mustache
+
 Formats in Progress:
 * Haml-ish
-* Mustache
 * Django-ish
