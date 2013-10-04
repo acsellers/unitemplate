@@ -14,7 +14,7 @@ func (bp BhamParser) ParseFile(name, content string) (map[string]*parse.Tree, er
 }
 
 func (bp BhamParser) RequiredHtmlFuncs() htmlTemplate.FuncMap {
-	return textTemplate.FuncMap{
+	return htmlTemplate.FuncMap{
 		"bhamFilterConcat": func(filterName string, s ...string) htmlTemplate.HTML {
 			for _, filter := range Filters {
 				if filter.Trigger == filterName {
