@@ -22,19 +22,3 @@ type FilterHandler struct {
 }
 
 type Transformer func(string) string
-
-func shortHandOpen(sh string) token {
-	output := token{
-		purpose: pse_tag,
-		content: "<script type=\"text/javascript\">",
-	}
-	return output
-}
-
-func shortHandClose(sh string) token {
-	output := token{
-		purpose: pse_tag,
-		content: "</script>",
-	}
-	return output
-}

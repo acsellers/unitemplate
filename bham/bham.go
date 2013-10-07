@@ -53,7 +53,6 @@ type protoTree struct {
 	lineList   []templateLine
 	nodes      []protoNode
 	currNodes  []protoNode
-	tokenList  []token
 	outputTree *parse.Tree
 	err        error
 }

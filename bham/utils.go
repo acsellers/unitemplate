@@ -2,10 +2,13 @@ package bham
 
 import (
 	"fmt"
+	"regexp"
 	"strings"
 	"text/template"
 	"text/template/parse"
 )
+
+var varUse = regexp.MustCompile("(\\$[a-zA-Z0-9]+)")
 
 func findAttrs(s string) (string, string) {
 	var openings int
