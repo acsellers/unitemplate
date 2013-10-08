@@ -10,7 +10,7 @@ escaping functionality.
 
 ----------------------
 
-[Documentation](http://godoc.org/github.com/acsellers/unitemplate/bham")
+[Documentation](http://godoc.org/github.com/acsellers/unitemplate/bham)
 
 
 ## Working Markup Examples
