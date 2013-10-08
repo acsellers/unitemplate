@@ -12,6 +12,8 @@ library. Each Tree is then combined into into a html/template and text/template
 template, so when you execute the Engine instance, you can have either an html
 escaped form or a plain text form.
 
+[Documentation](http://godoc.org/github.com/acsellers/unitemplate")
+
 Current Formats:
 * None
 

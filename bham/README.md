@@ -10,8 +10,7 @@ escaping functionality.
 
 ----------------------
 
-## Documentation
-
+[Documentation](http://godoc.org/github.com/acsellers/unitemplate/bham")
 
 
 ## Working Markup Examples
@@ -74,26 +73,3 @@ And the big one, that shows off pretty much all the features...
             = link_to $sponsor.Name $sponsor.Url "class='name'"
 ```
 
-## Implemented Features
-
-* Plaintext passthrough
-* %tag expansion
-* If/Else Statements
-* Tag Nesting
-* Range statements for collection data structures
-* = ... for Lines with pipelines on them
-* Parentheses for HTML-like attributes
-* Class and ID shorthand
-* With statement for limited visibility variables
-* Template Variables
-* {{ }} For embedded pipeline output
-
-## To Be Implemented Features
-
-* Code Quality
-* More Documentation
-
-## Unlikely To Be Implemented Features
-
-* Curly branch hashrocket syntax for attributes
-* Multiple line prefixes for different visibility/escaping
